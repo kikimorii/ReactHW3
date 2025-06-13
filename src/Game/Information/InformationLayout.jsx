@@ -1,5 +1,5 @@
 export default function InformationLayout() {
     return (
-        <p>InformationLayout</p>
+        <p>Ходит: X</p>
     )
 }

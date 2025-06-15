@@ -5,7 +5,7 @@ export default function Game() {
     const [currentPlayer, setCurrentPlayer] = useState("X");
     const [isDraw, setIsDraw] = useState(false);
     const [isGameEnded, setIsGameEnded] = useState(false);
-    const [field, setField] = ["", "", "", "", "", "", "", "", ""];
+    const [field, setField] = useState(["", "", "", "", "", "", "", "", ""]);
 
     return (
         <GameLayout

@@ -1,5 +1,6 @@
 import Information from './Information/InformationContainer';
 import Field from './Field/FieldContainer';
+import AgainButton from './AgainButton/AgainButtonContainer';
 
 export default function GameLayout(props) {
     return (
@@ -20,6 +21,14 @@ export default function GameLayout(props) {
 
                 isDraw={props.isDraw}
                 setIsDraw={props.setIsDraw}
+            />
+            <AgainButton
+                isGameEnded={props.isGameEnded}
+
+                setIsGameEnded={props.setIsGameEnded}
+                setField={props.setField}
+                setIsDraw={props.setIsDraw}
+                setCurrentPlayer={props.setCurrentPlayer}
             />
         </div>
     )

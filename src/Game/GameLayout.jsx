@@ -9,7 +9,14 @@ export default function GameLayout(props) {
                 isDraw={props.isDraw}
                 isGameEnded={props.isGameEnded}
             />
-            <Field />
+            <Field
+                currentPlayer={props.currentPlayer}
+                setCurrentPlayer={props.setCurrentPlayer}
+
+                field={props.field}
+                setField={props.setField}
+                isGameEnded={props.isGameEnded}
+            />
         </div>
     )
 }

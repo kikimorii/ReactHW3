@@ -15,7 +15,11 @@ export default function Field(props) {
 
         if (!isWin) {
             props.setCurrentPlayer(props.currentPlayer === 'X' ? '0' : "X")
-            props.setIsDraw(field.every((element) => element));
+            const isDraw = field.every((element) => element);
+            if (isDraw) {
+                props.setIsDraw(true);
+                props.setIsGameEnded(true);
+            }
         } else {
             props.setIsGameEnded(true);
         }
